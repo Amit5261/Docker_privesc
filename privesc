@@ -1,0 +1,9 @@
+FROM debian:wheezy                      //to use debian wheezy
+
+ENV WORKDIR -p /privesc   //set environment privesc
+
+RUN mkdir -p $WORKDIR  //mkdir according to argument
+
+VOLUME [ $WORKDIR ]  //set volume
+
+WORKDIR $WORKDIR     
